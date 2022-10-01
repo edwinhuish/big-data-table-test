@@ -1,7 +1,7 @@
-import list from "./json/list.json";
+import list from './json/list.json';
 
 function sleep(time) {
-  return new Promise((reslove) => setTimeout(reslove, time));
+  return new Promise(reslove => setTimeout(reslove, time));
 }
 
 export async function getSalesIPS() {
@@ -9,11 +9,11 @@ export async function getSalesIPS() {
 
   return {
     code: 0,
-    result: {
+    data: {
       data: list,
-      total: list.length,
+      total: list.length
     },
-    message: "ok",
-    timestamp: new Date().toString(),
+    message: 'ok',
+    timestamp: new Date().toString()
   };
 }
